@@ -1,0 +1,60 @@
+body, html {
+	color: white;
+	background-color: black;
+
+	padding: 0;
+	margin: 0;
+
+	height: 100%;
+}
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.solver {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+
+	gap: 1lh;
+	padding: 1ch;
+
+	max-width: 80ch;
+	width: 100%;
+}
+
+.textareas {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 1ch;
+
+	width: 100%;
+
+	font-size: 1rem;
+}
+
+textarea {
+	background-color: #333333;
+	color: #eeeeee;
+
+	font-size: 1em;
+	min-height: 10lh;
+
+	field-sizing: content;
+
+	resize: none;
+}
+
+button {
+	background-color: #333333;
+	color: #eeeeee;
+
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.2em;
+	padding: 0.5ch;
+}

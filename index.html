@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MSolver</title>
+
+	<link rel="stylesheet" href="./style.css">
+
+	<script src="./src/index.js" type="module"></script>
+</head>
+<body>
+	<h1>MSolver</h1>
+	<h2>Solver for homogenous systems of linear equations</h2>
+	<p>
+		Last defined process line is treated as the constant factor column
+	</p>
+	<div class="solver">
+		<div class="textareas">
+			<textarea id="input">
+cow farm: 250 feed -> 450 tissue slurry
+trommel meat process: 1000/9 tissue slurry -> 1000/9 meat, 0.25 abs
+mixer feed process: 1 feed items, 250/3 meat -> 1000/3 feed
+feed item supply: -> 1 feed items
+abs sink: 1 abs ->
+
+external: 1 feed -></textarea>
+			<textarea id="output" readonly></textarea>
+		</div>
+		<div>
+			<input type="checkbox" name="onlyints" id="onlyints" checked>
+			<label for="onlyints">Restrict solutions to integers</label>
+		</div>
+		<div>
+			<input type="checkbox" name="clampone" id="clampone">
+			<label for="clampone">Clamp solutions to [1,inf)</label>
+		</div>
+		<button id="solve">Solve</button>
+	</div>
+</body>
+</html>

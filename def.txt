@@ -1,0 +1,4 @@
+cow farm: 250 feed -> 450 tissue slurry
+trommel meat process: 1000/9 tissue slurry -> 1000/9 meat, 0.25 abs
+mixer feed process: 1 feed items, 250/3 meat -> 1000/3 feed
+feed item supply: -> 1 feed items
